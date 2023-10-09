@@ -1,0 +1,202 @@
+html, body {
+	margin: 0px !important;
+	background: #ebebeb !important;
+	background-image: none !important;
+}
+body > div:nth-of-type(3) {
+    padding: 20px 0px;
+    background-color: #f6f6f6;
+}
+#waitDiv {
+	display: none;
+}
+img[src*="cercuit_1.gif"], img[src*="horz_1.gif"] {
+    display: none;
+}
+table {
+	width: 100% !important;
+	word-wrap: break-word !important;
+}
+table td {
+	white-space: normal !important;
+	vertical-align: top;
+}
+#header {
+	height: 30px !important;
+	padding: 10px 0px;
+	background-color: #a73b23;
+	background-image: none !important;
+	transition: height 1s;
+	overflow: hidden;
+	border-bottom: 15px solid #c56006;
+}
+#header.show-menu {
+	height: 100% !important;
+	overflow: auto;
+}
+#header > .wrapper,
+#footer > .wrapper {
+	width: 960px;
+	margin: auto;
+	line-height: 1.3;
+}
+#header > .wrapper > .logo > img {
+	width: auto;
+	height: 30px;
+}
+#header > .wrapper > .menu_button > img {
+	display: none;
+	float: left;
+	width: 20px;
+	height: 20px;
+	margin: 5px 0px;
+}
+#header > .wrapper > .menu_button > img:hover {
+	cursor: pointer;
+}
+#header > .wrapper > .language {
+	float: right;
+	font-family: 'Kanit', sans-serif;
+	font-size: 16px;
+	margin: 4px 0px;
+}
+#header > .wrapper > .language > span {
+	color: #dadada;
+	margin: 0px 5px;
+}
+#header > .wrapper > .language > a {
+	color: #dfdfdf;
+	text-decoration: none;
+}
+#header > .wrapper > .language > a:hover,
+#header > .wrapper > .language > a.selected {
+	color: #ffffff;
+}
+#header > .wrapper > .menu {
+	margin-top: 10px;
+}
+#header > .wrapper > .menu > ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+#header > .wrapper > .menu > ul > li {
+	padding: 10px 0px;
+	border-top: 1px solid rgba(233, 233, 233, 0.2);
+}
+#header > .wrapper > .menu > ul > li > a {
+	font-family: 'Kanit', sans-serif;
+	font-size: 14px;
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+}
+#wrapper {
+	width: 960px !important;
+	background: transparent !important;
+	overflow-y: scroll;
+}
+#wrapper > table:nth-of-type(1) > tbody > tr > td:nth-of-type(1) > #title {
+	display: none;
+}
+#wrapper > table:nth-of-type(1) > tbody > tr > td:nth-of-type(1) > #menu {
+	width: calc(100% - 10px);
+	margin-right: 10px;
+	background-color: #fff;
+	border-radius: 4px;
+	border-top: 4px solid #a73b23;
+	border-left: 1px solid rgb(231, 231, 231);
+	border-right: 1px solid rgb(231, 231, 231);
+	border-bottom: 4px solid #a73b23;
+}
+#wrapper > table:nth-of-type(1) > tbody > tr > td:nth-of-type(1) > #menu a {
+	font-family: 'Kanit', sans-serif;
+	font-size: 14px !important;
+	line-height: 1.6;
+    border-bottom: none !important;
+    border-radius: 4px;
+}
+#wrapper > table:nth-of-type(1) > tbody > tr > td:nth-of-type(2) {
+    width: auto !important;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #e7e7e7;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.subMainheadermsg > .icon {
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+}
+#footer {
+	width: 100%;
+	padding: 20px 0px;
+	background: #ebebeb !important;
+	font-family: 'Kanit', sans-serif;
+	color: rgb(126, 126, 126);
+	border-top: 3px solid #e7e7e7;
+	text-align: right;
+}
+#footer > .wrapper > img {
+	float: left;
+	width: 45px;
+	height: auto;
+}
+#footer > .wrapper > .detail {
+	font-size: 12px;
+	white-space: pre-line
+}
+#footer > .wrapper > .detail > .headline {
+	font-size: 14px;
+	font-weight: bold;
+}
+#footer > .wrapper > .detail-mobile {
+	display: none;
+}
+@media only screen and (max-width: 960px) {
+	#wrapper {
+		width: 100% !important;
+		box-sizing: border-box;
+	}
+	#header > .wrapper,
+	#footer > .wrapper {
+		width: 768px;
+		box-sizing: border-box;
+	}
+}
+@media only screen and (max-width: 767px) {
+	#header > .wrapper {
+		text-align: center;
+	}
+	#header > .wrapper > .menu_button > img {
+		display: block;
+	}
+	#header > .wrapper,
+	#footer > .wrapper {
+		width: 100% !important;
+		padding: 0px 20px;
+		box-sizing: border-box;
+	}
+	#wrapper > table:nth-of-type(1) > tbody > tr > td:nth-of-type(1) {
+		display: none;
+	}
+	#footer {
+		text-align: left;
+	}
+	#footer > .wrapper > img {
+		width: 70px;
+	}
+	#footer > .wrapper > .detail {
+		display: none;
+	}
+	#footer > .wrapper > .detail-mobile {
+		font-size: 12px;
+		display: block;
+		white-space: pre-line;
+		text-align: right
+	}
+	#footer > .wrapper > .detail-mobile > .headline {
+		font-weight: bold;
+		font-size: 14px;
+	}
+}

@@ -1,0 +1,40 @@
+select,
+textarea,
+input:not([type=checkbox]):not([type=radio]) {
+    appearance: none;
+    font-family: 'Kanit', sans-serif !important;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #e7e7e7;
+    outline: none;
+    margin: 5px 0px;
+    background-color: #fff;
+}
+select,
+input:not([type=checkbox]):not([type=radio]) {
+    height: 35px;
+    padding: 0px 10px;
+}
+textarea {
+    width: 100%;
+    min-height: 150px;
+    height: 150px;
+    resize: vertical;
+    padding: 10px;
+}
+input[type="radio"] {
+    margin-right: 10px;
+}
+input[type="submit"] {
+    color: #fff;
+    background-color: #7E392F !important;
+}
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: rgb(143, 68, 57) !important;
+}
+select {
+    background: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIโ€ฆAxLjQ5SDEuNDF6TTMuNTQgNS4zM0wyLjQ4IDYuODIgMS40MSA1LjMzaDIuMTN6Ii8+PC9zdmc+) no-repeat 95% 50%;
+    background-position: right 5px top;
+    background-color: #fff;
+}
